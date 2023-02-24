@@ -1,2 +1,2 @@
 #!/bin/bash
-owner=$(stat -c %U hello) if [ "$owner" = "guillaume" ] then chown betty hello fi
+owner=$(stat -c %U hello) if [ "$owner" = "betty" ] then chown betty hello fi
