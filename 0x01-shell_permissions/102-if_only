@@ -1,2 +1,2 @@
 #!/bin/bash
-[ $(stat -c %U hello) == "guillaume" ] && chown betty hello echo $(stat -c %U hello)
+if test $(stat -c %U hello) = "guillaume" then chown betty hello fi echo $(stat -c %U hello)
